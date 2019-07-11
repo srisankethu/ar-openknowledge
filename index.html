@@ -228,7 +228,7 @@
     	if(res.data && res.data.length) {
     		await Promise.all(res.data.map(async linkId => {
           arweave.transactions.get(linkId).then(transaction => {
-              total_tips = total_tips + parseFloat(arweave.ar.winstonToAr(transaction.get('quantity'))).toFixed(2);
+              total_tips = parseFloat(total_tips) + parseFloat(arweave.ar.winstonToAr(transaction.get('quantity')));
               document.getElementById("article_tips").innerText = "Tips Received: " + total_tips.toString() + ' AR';
           });
     		}));

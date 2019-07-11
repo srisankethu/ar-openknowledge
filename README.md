@@ -17,3 +17,5 @@ Currently in its testing stage, ar-openknowledge is a decentralised article publ
 * Add tags
 * Add search and search/sort by tags
 * Increase loading efficiency
+
+Open "Console" in Developer Tools section on the browser to check logs. Log messages are posted whenever "POST" functions are executed.
